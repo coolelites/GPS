@@ -10,7 +10,8 @@ class Waylist_node {
 
     float x;
     float y;
-
+    int count;
+    
     Waylist_node* head;
     Waylist_node* back;
     
@@ -18,6 +19,8 @@ class Waylist_node {
       Waylist_node();
       ~Waylist_node();
       void add();
+      void remov();
+      void clr();
 };
 
 #endif
