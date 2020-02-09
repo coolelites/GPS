@@ -1,30 +1,23 @@
-#include <string>
-#include <iostream>
+#ifndef WLIST_H
+#define WLIST_H 
 using namespace std;
 
+class Waylist_node {
 
-class msg_list;
+  private:
+    Waylist_node* next;
+    Waylist_node* prev;
 
-class msg_list_node {
-	private:
-		msg_list_node* next;
-        string msg;
-		
-	friend	class msg_list;
+    float x;
+    float y;
+
+    Waylist_node* head;
+    Waylist_node* back;
+    
+   public:
+      Waylist_node();
+      ~Waylist_node();
+      void add();
 };
 
-
-class msg_list {
-	private:
-        msg_list_node* front;
-        msg_list_node* back;
-		
-	public:
-		msg_list();
-        ~msg_list();
-		void display();
-		void append(string x);
-        string preview_back();
-        string remove_back();
-        void insert_at_front(string x);
-};
+#endif
