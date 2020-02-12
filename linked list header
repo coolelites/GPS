@@ -6,7 +6,6 @@ class Waylist_node {
 
   private:
     Waylist_node* next;
-    Waylist_node* prev;
 
     float x;
     float y;
