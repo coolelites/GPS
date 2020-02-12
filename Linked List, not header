@@ -9,7 +9,7 @@ Waylist_node::~Waylist_node(){
   if(count > -1)
     clr();
 }
-Waylist_node::add_front(Something, Something){
+Waylist_node::add_front(GPS.data()){
      waylist_node* new  = new waylist_node();
      
      if(head == NULL)
