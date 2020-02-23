@@ -43,15 +43,25 @@ GPS_LL_node::remove_front(){
     }
     else
     {
-       GPS_LL_node* current = new GPS_LL_node();
-       curr = front;
-       front = curr ->next;
-       delete curr;
+       GPS_LL_node* current = front;
+       front = current ->next;
+       delete current;
     }
 }
 GPS_LL_node::clr(){
-
+        
 }
-GPS_LL_node::find_nth_node(int x){
+GPS_LL_node::find_nth_node(int index){
+    int rcount = 0;
+    GPS_LL_node* current = front;
     
+    while(current != NULL){
+     if (count == index)
+         return current->data;
+     else
+     {  
+         count++;
+         current = current ->next;
+     }
+     }
 }
