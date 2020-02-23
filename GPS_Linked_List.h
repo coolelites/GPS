@@ -24,7 +24,7 @@ public:
     void add_front();
     void remove_front();
     void clr();
-    void find_nth_node(int x);
+    void find_nth_node(int index);
 };
 
 #endif
