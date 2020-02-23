@@ -55,7 +55,8 @@ GPS_LL_node::find_nth_node(int index){
     int rcount = 0;
     GPS_LL_node* current = front;
     
-    while(current != NULL){
+    while(current != NULL)
+    {
      if (count == index)
          return current->data;
      else
@@ -63,5 +64,5 @@ GPS_LL_node::find_nth_node(int index){
          count++;
          current = current ->next;
      }
-     }
+    }
 }
